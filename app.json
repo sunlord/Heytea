@@ -1,13 +1,54 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/order/order",
+    "pages/goods/goods",
+    "pages/person/person",
+    "pages/orderList/orderList"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
+    "navigationBarTitleText": "Heytea",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#000",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./icons/shouye.png",
+        "selectedIconPath": "./icons/shouye_click.png"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "点单",
+        "iconPath": "./icons/tiandian.png",
+        "selectedIconPath": "./icons/tiandian_click.png"
+      },
+      {
+        "pagePath": "pages/goods/goods",
+        "text": "百货",
+        "iconPath": "./icons/baihuochaoshi.png",
+        "selectedIconPath": "./icons/baihuochaoshi_click.png"
+      },
+      {
+        "pagePath": "pages/orderList/orderList",
+        "text": "订单",
+        "iconPath": "./icons/qitadingdan.png",
+        "selectedIconPath": "./icons/qitadingdan_click.png"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "text": "熹贵妃",
+        "iconPath": "./icons/fav.png",
+        "selectedIconPath": "./icons/fav_click.png"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
