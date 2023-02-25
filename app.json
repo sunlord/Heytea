@@ -9,6 +9,7 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
+    "navigationStyle": "custom",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Heytea",
     "navigationBarTextStyle": "black"

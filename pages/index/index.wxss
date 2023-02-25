@@ -1,4 +1,250 @@
 /**index.wxss**/
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f1ece6;
+}
+
+.top {
+  width: 100%;
+  margin-top: -200rpx;
+  height: 790rpx;
+  /* position: absolute; */
+  /* top: 0; */
+  /* background-color: #650a0f; */
+}
+
+.swiper {
+  width: 100%;
+  height: 790rpx;
+}
+
+swiper-item image {
+  width: 100%;
+  height: 790rpx;
+}
+
+/* 到黑线为 849px 登录框248px 登录和下面间距32px 下面边框2px 登录黑框82px 黑线为63px 欢迎字体46px 下面字体30px 登录30px */
+.bottom {
+  position: relative;
+  width: 100%;
+  height: 955rpx;
+  /* background-color: #f1ece6; */
+}
+/* 54 + 1026 */
+.login {
+  position: absolute;
+  width: 91%;
+  height: 124rpx;
+  top: -34rpx;
+  right: 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.login_left {
+  display: flex;
+  flex-direction: column;
+}
+
+.login_left > text:nth-child(1) {
+  font-size: 30rpx;
+}
+
+.login_left > text:nth-child(2) {
+  font-size: 23rpx;
+}
+
+.login_right {
+  width: 188rpx;
+  height: 41rpx;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.login_button {
+  width: 188rpx;
+  height: 41rpx;
+  background-color: black;
+  color: #fff;
+  font-size: 23rpx;
+  display: flex;
+  border-radius: 5rpx;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 点单框 575px */
+
+.order {
+  width: 95%;
+  height: 288rpx;
+  right: 0;
+  top: 106rpx;
+  position: absolute;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+/* 76px + 96px + 76px */
+.order_top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 124rpx;
+}
+
+.hallFood_button {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.hallFood_button>text:nth-child(1) {
+  font-size: 30rpx;
+}
+
+.hallFood_button>text:nth-child(2) {
+  font-size: 23rpx;
+  color: #686868;
+}
+
+.order_top_hallFood {
+  border-right: 1rpx solid #e6e6e6;
+}
+
+.takeOut_button {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.takeOut_button>text:nth-child(1) {
+  font-size: 30rpx;
+}
+
+.takeOut_button>text:nth-child(2) {
+  font-size: 23rpx;
+  color: #686868;
+}
+
+.order_bottom {
+  width: 200%;
+  height: 100%;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.scroll {
+  width: 200%;
+  height: 100%;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 183rpx;
+}
+
+.item1 {
+  height: 100%;
+  width: 200rpx;
+  margin-right: 20rpx;
+  display: inline-block;
+  background-color: blueviolet;
+}
+
+.item2 {
+  height: 100%;
+  width: 200rpx;
+  margin-right: 20rpx;
+  display: inline-block;
+  background-color: #74110c;
+}
+
+.item3 {
+  height: 100%;
+  width: 200rpx;
+  margin-right: 20rpx;
+  display: inline-block;
+  background-color: #74110c;
+}
+
+.item4 {
+
+  height: 100%;
+  width: 200rpx;
+  margin-right: 20rpx;
+  display: inline-block;
+  background-color: #74110c;
+}
+
+.item5 {
+
+  height: 100%;
+  width: 200rpx;
+  margin-right: 20rpx;
+  display: inline-block;
+  background-color: #74110c;
+}
+
+/* 间距 34px 黑高576px 白高188px 764px 382rpx */
+.new {
+  width: 95%;
+  height: 382rpx;
+  right: 0;
+  top: 411rpx;
+  position: absolute;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.new_image {
+  width: 100%;
+  height: 288rpx;
+  background: #74110c;
+}
+
+.new_title {
+  width: 100%;
+  height: 94rpx;
+  display: flex;
+  flex-direction: column;
+  padding-left: 4%;
+}
+
+.new_title_text1 {
+  font-size: 22rpx;
+  line-height: 22rpx;
+}
+
+.new_title_text2 {
+  color: #616161;
+  font-size: 16rpx;
+  line-height: 16rpx;
+}
+
+.heytea {
+  height: 123rpx;
+  width: 95%;
+  right: 0;
+  top: 810rpx;
+  position: absolute;
+  background-color: #fff;
+}
+
 .userinfo {
   display: flex;
   flex-direction: column;
@@ -17,3 +263,5 @@
 .usermotto {
   margin-top: 200px;
 }
+
+/* 顶部1180px */

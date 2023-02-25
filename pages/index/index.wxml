@@ -1,23 +1,89 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <block wx:if="{{canIUseOpenData}}">
-      <view class="userinfo-avatar" bindtap="bindViewTap">
-        <open-data type="userAvatarUrl"></open-data>
+<!-- top组件是一个轮播图 -->
+<view class="top">
+  <swiper class="swiper">
+    <swiper-item>
+      <image src="../../icons/车厘.png" alt=""/>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../icons/车厘.png" alt=""/>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../icons/车厘.png" alt=""/>
+    </swiper-item>
+  </swiper>
+</view>
+<!-- bottom是轮播图以下页面的总容器 -->
+<view class="bottom">
+<!-- 欢迎及登录模块 -->
+  <view class="login">
+    <view class="login_left">
+      <text>欢迎贵宾光临熹茶</text>
+      <text>登录可领取啊西巴,激活贵宾特权</text>
+    </view>
+    <view class="login_right">
+    <button class="login_button">
+      立即登录
+    </button>
+    </view>
+  </view>
+  <!-- 点单模块 -->
+  <view class="order">
+    <view class="order_top">
+      <!-- 堂食 -->
+      <view class="order_top_hallFood">
+        <button class="hallFood_button" >
+          <text>门店自取</text>
+          <text>提前下单免排队</text>
+        </button>
       </view>
-      <open-data type="userNickName"></open-data>
-    </block>
-    <block wx:elif="{{!hasUserInfo}}">
-      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
-      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
-    </block>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+      <view class="order_top_takeOut">
+        <button class="takeOut_button">
+          <text>熹外送</text>
+          <text>送喜到家更安心</text>
+        </button>
+      </view>
+    </view>
+    <view class="order_bottom">
+      <scroll-view class="scroll" bindscroll="getleft">
+        <view class="item1">
+          阿喜社群
+        </view>
+        <view class="item2">
+          开学有喜
+        </view>
+        <view class="item3">
+          喜卡
+        </view>
+        <view class="item4">
+          一起喝
+        </view>
+        <view class="item5">
+          阿喜团餐
+        </view>
+      </scroll-view>
+    </view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+<!-- 新品模块 -->
+  <view class="new">
+  <!-- 这里是新品图 -->
+    <view class="new_image">
+    
+    </view>
+    <view class="new_title">
+      <text class="new_title_text1">
+        车厘上新 | 熹茶与特斯拉祝你开工见喜
+      </text>
+      <text class="new_title_text2">
+        喝时令车厘, 参与"喜提特斯拉"活动
+      </text>
+    </view>
   </view>
+  <!-- 这里是品牌slogan -->
+  <view class="heytea">
+    
+  </view>
+</view>
+  
 </view>
